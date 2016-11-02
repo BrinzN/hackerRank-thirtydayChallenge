@@ -1,3 +1,6 @@
+import java.util.*;
+import java.math.*;
+
 /*
 Input Format
 There are 3 lines of numeric input: 
@@ -19,3 +22,24 @@ Sample Output
 The total meal cost is 15 dollars.
 */
 
+public class DayThreeOperators {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        double mealCost = scan.nextDouble(); // original meal price
+        int tipPercent = scan.nextInt(); // tip percentage
+        int taxPercent = scan.nextInt(); // tax percentage
+        scan.close();
+
+        // Write your calculation code here.
+        double tipAmount = mealCost*tipPercent/100;
+        double taxAmount = mealCost*taxPercent/100;
+
+
+        // cast the result of the rounding operation to an int and save it as totalCost
+        double totalCost = mealCost+tipAmount+taxAmount;
+
+        // Print your result
+        System.out.println("The total meal cost is "+ (int) Math.round(totalCost)+" dollars.");
+    }
+}
