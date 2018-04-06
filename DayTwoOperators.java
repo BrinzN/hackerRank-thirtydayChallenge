@@ -22,7 +22,7 @@ Sample Output
 The total meal cost is 15 dollars.
 */
 
-public class DayThreeOperators {
+public class DayTwoOperators {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
