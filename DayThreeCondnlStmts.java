@@ -17,7 +17,7 @@ Output Format
 Print Weird if the number is weird; otherwise, print Not Weird.
 */
 
-public class DayFourCondnlStmts{
+public class DayThreeCondnlStmts{
  public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
